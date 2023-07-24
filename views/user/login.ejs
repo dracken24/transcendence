@@ -1,0 +1,8 @@
+<%- include("../../partials/header", { title : "Login Page", style : "connexion" }) %>
+	<H1>Login page</H1>
+	<form class="form" action="" method="post">
+		<%- include("../components/input", { type : "text", name : "username" }) %>
+		<%- include("../components/input", { type : "password", name : "password" }) %>
+		<button type="submit">Login</button>
+	</form>
+<%- include("../../partials/footer") %>

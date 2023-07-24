@@ -1,0 +1,11 @@
+body {
+	font-family: sans-serif;
+}
+
+.navigation {
+	display: flex;
+	background-color: rgb(70, 134, 153);
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}

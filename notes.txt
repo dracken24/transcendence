@@ -1,0 +1,10 @@
+npm run build // build dependences for project
+
+nest g mo name  // install module
+nest g co name  // install controler
+nest g s name  // install service
+
+npm i ejs // install moteur de template
+npm i --save class-validator class-transformer // for validation transfert convert
+npm i bcrypt // for hasch password
+npm i -D @types/bcrypt // autocompletion

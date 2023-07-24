@@ -1,10 +1,16 @@
-npm run build // build dependences for project
+// Using Commands
+brew services start postgresql@14                   // start database Mac
+pgAdmin                                             // Launch database visualizer
+npm run start:dev                                   // build dependences for project
 
-nest g mo name  // install module
-nest g co name  // install controler
-nest g s name  // install service
+// reate groups Ts
+nest g mo name                                      // install module
+nest g co name                                      // install controler
+nest g s name                                       // install service
 
-npm i ejs // install moteur de template
-npm i --save class-validator class-transformer // for validation transfert convert
-npm i bcrypt // for hasch password
-npm i -D @types/bcrypt // autocompletion
+
+// Need to install
+npm i ejs                                           // install moteur de template
+npm i --save class-validator class-transformer      // for validation transfert convert
+npm i bcrypt                                        // for hasch password
+npm i -D @types/bcrypt                              // autocompletion

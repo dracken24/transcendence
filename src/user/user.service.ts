@@ -1,9 +1,10 @@
-import { Injectable, ConflictException } from '@nestjs/common';
+import { Injectable, ConflictException, NotFoundException, UnauthorizedException } from '@nestjs/common';
 import { SignupDto } from './dto/signupDto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { User } from './user.entity';
 import { Repository } from 'typeorm';
 import * as bcrypt from 'bcrypt';
+import { LoginDto } from './dto/loginDto';
 
 @Injectable()
 export class UserService {
@@ -23,4 +24,13 @@ export class UserService {
 			throw new ConflictException(error.message);
 		}
 	}
+
+	async postLogin(body: LoginDto) {
+        const { password, username } = body;
+		const user = await this.usersRepository.findOne({ where : { username : username}});
+		if (!user) throw new NotFoundException("User not found");
+		const match = await bcrypt.compare(password, user.password);
+		if (!match) throw  new UnauthorizedException("Invalid Password");
+		return user;
+    }
 }

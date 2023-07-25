@@ -14,3 +14,9 @@ npm i ejs                                           // install moteur de templat
 npm i --save class-validator class-transformer      // for validation transfert convert
 npm i bcrypt                                        // for hasch password
 npm i -D @types/bcrypt                              // autocompletion
+npm i express-session
+npm i -D @types/express-session
+npm install connect-pg-simple
+npm install @types/connect-pg-simple
+npm install -g typeorm
+

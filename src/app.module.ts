@@ -37,7 +37,7 @@ import { SessionEntity } from './user/sessions/session.entity';
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
-      port: 3306, // Utilisez le port 5432 pour PostgreSQL
+      port: 5432, // Utilisez le port 5432 pour PostgreSQL
       username: 'postgres',
       password: 'Serpents24.',
       database: 'brain',

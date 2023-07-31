@@ -20,7 +20,7 @@ async function bootstrap() {
     host: 'localhost',
     database: 'brain',
     password: 'Serpents24.',
-    port: 3306, // 3306 home, 5432 school
+    port: 5432, // 3306 home, 5432 school
   });
 
   const mySQLStore = PgSession(session);

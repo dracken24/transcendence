@@ -10,13 +10,13 @@ nest g s name                                       // install service
 
 
 // Need to install
+npm i -g @nestjs/cli
 npm i ejs                                           // install moteur de template
 npm i --save class-validator class-transformer      // for validation transfert convert
 npm i bcrypt                                        // for hasch password
 npm i -D @types/bcrypt                              // autocompletion
 npm i express-session
 npm i -D @types/express-session
-npm install connect-pg-simple
-npm install @types/connect-pg-simple
-npm install -g typeorm
-
+npm i connect-pg-simple
+npm i -D @types/connect-pg-simple
+npm i -g typeorm

@@ -2,6 +2,7 @@
 brew services start postgresql@14                   // start database Mac
 pgAdmin                                             // Launch database visualizer
 npm run start:dev                                   // build dependences for project
+npm run build                                       
 
 // reate groups Ts
 nest g mo name                                      // install module

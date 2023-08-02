@@ -8,9 +8,17 @@ module.exports = function(options) {
 		watch: true,
 		externals: [
 		nodeExternals({
-			whitelist: ['webpack/hot/poll?100'],
+			allowlist: ['webpack/hot/poll?100'],
 		}),
 		],
-		plugins: [...options.plugins, new webpack.HotModuleReplacementPlugin()],
+		plugins: [
+		...options.plugins,
+		new webpack.HotModuleReplacementPlugin(),
+		],
+		watchOptions: {
+		ignored: /node_modules/,
+		aggregateTimeout: 300,
+		poll: 1000,
+		},
 	};
 };
